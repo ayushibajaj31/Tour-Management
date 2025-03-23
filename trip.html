@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TRIP MANAGEMENT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body, html {
+            height: 100%;
+        }
+        .bg {
+            background-image: url("trip.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg">
+    <div style="padding-top: 50px; text-align: center;">
+        <div class="alert alert-info" role="alert" style="height: 60px;font-size: 24px">
+            <a href="signin.html"><button type="button" style="float: left;" class="btn btn-danger">BACK</button></a>
+            TRIP DETAILS
+            <a href="signin.html"><img src="home.png" style="float: right; height: 35px"></a>
+        </div>
+    </div>
+    <div class="row" style="margin: 20px 10px">
+        <div class="col-md-12" style="padding: 50px">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">TRIP ID</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter Trip ID">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">DESTINATION</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter Destination">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">START DATE</span>
+                </div>
+                <input type="date" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">END DATE</span>
+                </div>
+                <input type="date" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">ASSOCIATED TRIP</span>
+                </div>
+                <select class="form-control">
+                    <option>Select Associated Trip</option>
+                    <option>Trip A</option>
+                    <option>Trip B</option>
+                    <option>Trip C</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <a href="booking.html" class="btn btn-success">PROCEED TO BOOKING</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>TRIP MANAGEMENT</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<style>
+.center-block { margin: auto; display: block; }
+body, html { height: 100%; }
+.bg { 
+  background-image: url("hotel.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body class="bg">
+	<div style="padding-top: 50px; text-align: center;">
+		<div class="alert alert-info" style="height: 60px; font-size: 24px">
+			<a href="travel.html">
+			<button type="button" class="btn btn-danger" style="float: left;">BACK</button>
+			</a>
+			HOTEL RESERVATION
+			<a href="signin.html">
+			<img src="home.png" style="float: right; height: 35px">
+			</a>
+		</div>
+	</div>
+
+<div class="col-md-12" style="padding: 50px;">
+    <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+            <button type="button" class="btn btn-dark" style="width: 200px">AVAILABLE HOTELS</button>
+        </div>
+        <div class="dropdown"> &nbsp;
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                SELECT ONE
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Hotel A</a>
+                <a class="dropdown-item" href="#">Hotel B</a>
+                <a class="dropdown-item" href="#">Hotel C</a>
+            </div>
+        </div>
+    </div>
+    <br/>
+    
+    <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+            <button type="button" class="btn btn-dark" style="width: 200px">HOTEL NAME</button>
+        </div>
+        <input type="text" class="form-control" placeholder="Enter Hotel Name">
+    </div>
+    <br/>
+
+    <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+            <button type="button" class="btn btn-dark" style="width: 200px">HOTEL ID</button>
+        </div>
+        <input type="text" class="form-control" placeholder="Enter Hotel ID">
+    </div>
+    <br/>
+
+    <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+            <button type="button" class="btn btn-dark" style="width: 200px">CONTACT INFO</button>
+        </div>
+        <input type="text" class="form-control" placeholder="Enter Contact Info">
+    </div>
+    <br/>
+
+    <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+            <button type="button" class="btn btn-dark" style="width: 200px">RATING</button>
+        </div>
+        <input type="text" class="form-control" placeholder="Enter Rating (1-5)">
+    </div>
+    <br/>
+
+    <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+            <button type="button" class="btn btn-dark" style="width: 200px">NUMBER OF ROOMS</button>
+        </div>
+        <input type="text" class="form-control" placeholder="Enter Number of Rooms">
+    </div>
+    <br/>
+
+    <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+            <button type="button" class="btn btn-dark" style="width: 200px">TYPE OF ROOM</button>
+        </div>
+        <div class="dropdown"> &nbsp;
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                SELECT ONE
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Single</a>
+                <a class="dropdown-item" href="#">Double</a>
+                <a class="dropdown-item" href="#">Suite</a>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <hr/>
+    <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+            <a href="tourism.html">
+                <button type="button" class="btn btn-success" style="width: 200px">MAKE RESERVATION</button>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

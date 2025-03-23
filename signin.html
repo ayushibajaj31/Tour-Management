@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIP MANAGEMENT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .bg {
+            background: url("signin.jpg") center/cover no-repeat;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-box {
+            border: 5px solid black;
+            width: 320px;
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .alert {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .form-group label {
+            text-align: left;
+            display: block;
+            font-weight: bold;
+        }
+        .btn {
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="bg">
+    <div class="login-box">
+        <div class="alert alert-info" role="alert">
+            LOGIN PAGE
+        </div>
+
+        <form action="php/signin.php" method="POST">
+            <div class="form-group">
+                <label>USERNAME</label>
+                <input type="text" class="form-control" name="userEmail" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label>PASSWORD</label>
+                <input type="password" class="form-control" name="userPassword" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" name="custo" class="btn btn-primary">Customer Login</button>
+            <button type="submit" name="admeen" class="btn btn-warning">Admin Login</button>
+            <hr>
+            <button type="submit" name="newCust" class="btn btn-success">New Customer Signup</button>
+        </form>
+    </div>
+</body>
+</html>
